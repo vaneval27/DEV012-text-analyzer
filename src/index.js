@@ -11,8 +11,6 @@ const numbersCountElement = document.querySelector('li.metric:nth-child(4)');
 const numberSumElement = document.querySelector('li.metric:nth-child(5)');
 const averageWordLengthElement = document.querySelector('li.metric:nth-child(6)');
 
-
-
 // Función para actualizar las métricas
 function updateMetrics() {
     const text = textArea.value;
@@ -44,12 +42,11 @@ function updateMetrics() {
     console.log(numbersSum)
     numberSumElement.innerHTML = `Suma de números: ${numbersSum}`;
     
-    
-    
-
-
-
-
+   //Ejemplo: Input: "Hola, devs 0 12 de Laboratoria!" -> Suma de números: 12
+   const averageWordsLength = analyzer.getAverageWordLength(text);
+   console.log(averageWordsLength)
+   averageWordLengthElement.innerHTML = `Longitud promedio de palabras: ${averageWordsLength}`;
+   
 }
 
 //Evento input en el textArea

@@ -20,7 +20,7 @@ const analyzer = {
   
   getNumberCount: (text) => {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
-    const numbers = text.match(/\d+/g);
+    const numbers = text.match(/\d+/g)
     if (numbers) {
     return numbers.length;
     } else {
@@ -30,7 +30,7 @@ const analyzer = {
 
   getNumberSum: (text) => {
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
-    const numbers = text.match(/\d+/g);
+    const numbers = text.match(/\d+/g)
     if (numbers) {
       const sum = numbers.reduce((total, numbers) => total + parseInt(numbers, 10), 0);
       return sum;
@@ -41,10 +41,16 @@ const analyzer = {
   
   getAverageWordLength: (text) => {    
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
-    
+    const words = text.trim().split(/\s+/);
+    if (words.length === 0) {
+      return 0;
+    } else {
+      const sumLength = words.reduce((total, word) => total + word.length, 0);
+      const averageLength = sumLength / words.length;
+      return averageLength;
+    }
   },
   
-
 };
 
 export default analyzer;
