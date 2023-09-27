@@ -22,7 +22,6 @@ function updateMetrics() {
    //Ejemplo: Input: "Hola, devs 0 12 de Laboratoria!" -> Palabras: 6  
     const words = analyzer.getWordCount(text);
     console.log(words)
-    //wordCountElement.textContent = analyzer.getWordCount(text);
     wordCountElement.textContent = `Palabras: ${words}`;
 
    //Ejemplo: Input: "Hola, devs 0 12 de Laboratoria!" -> Caracteres: 31 
@@ -31,10 +30,21 @@ function updateMetrics() {
     charCountElement.innerHTML = `Caracteres: ${characters}`;
 
    //Ejemplo: Input: "Hola, devs 0 12 de Laboratoria!" -> Caracteres sin espacios ni signos de puntuación: 24
-   const onlyCharCount = analyzer.getCharacterCountExcludingSpaces(text)
-    //console.log(onlyCharacters)
-    charCountNoSpacesElement.textContent = `Recuento caracteres sin espacios ni signos de puntuación: ${onlyCharCount}` 
+    const onlyCharCount = analyzer.getCharacterCountExcludingSpaces(text);
+    console.log(onlyCharCount)
+    charCountNoSpacesElement.innerHTML = `Caracteres sin espacios ni signos de puntuación: ${onlyCharCount}`
+    
+   //Ejemplo: Input: "Hola, devs 0 12 de Laboratoria!" -> Números: 2
+    const totalNumbers = analyzer.getNumberCount(text);
+    console.log(totalNumbers)
+    numbersCountElement.innerHTML = `Números: ${totalNumbers}`;
 
+   //Ejemplo: Input: "Hola, devs 0 12 de Laboratoria!" -> Suma de números: 12
+    const numbersSum = analyzer.getNumberSum(text);
+    console.log(numbersSum)
+    numberSumElement.innerHTML = `Suma de números: ${numbersSum}`;
+    
+    
     
 
 
