@@ -1,0 +1,18 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana;
+}
+
+body {
+    background-color: #ededed;
+}
+
+.metrics {
+    display: flex;
+}
+
+.metric {
+    flex: 1;
+}
+

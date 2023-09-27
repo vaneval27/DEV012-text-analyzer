@@ -52,4 +52,17 @@ function updateMetrics() {
 //Evento input en el textArea
 textArea.addEventListener('input', updateMetrics);
 
+//botón reset
+resetBtn.addEventListener('click', function(){
+    textArea.value = " "
+    wordCountElement.textContent = `Palabras:`
+    charCountElement.innerHTML = `Caracteres:`
+    charCountNoSpacesElement.innerHTML = `Caracteres sin espacios ni signos de puntuación:`
+    numbersCountElement.innerHTML = `Números:`
+    numberSumElement.innerHTML = `Suma de números:`
+    averageWordLengthElement.innerHTML = `Longitud promedio de palabras:`
+})
+
+
+
   
