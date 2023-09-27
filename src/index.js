@@ -24,7 +24,11 @@ function updateMetrics() {
     //wordCountElement.textContent = analyzer.getWordCount(text);
     wordCountElement.textContent = `Palabras: ${words}`;
 
-   
+   //Ejemplo: Input: "Hola, devs 0 12 de Laboratoria!" -> Caracteres: 31 
+    const characters = analyzer.getCharacterCount(text);
+    console.log(characters)
+    charCountElement.innerHTML = `Caracteres: ${characters}`;
+
 
 
 
