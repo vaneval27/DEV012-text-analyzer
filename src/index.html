@@ -15,20 +15,22 @@
   <p>Este analizador de texto te proporcionará métricas acerca del contenido del texto que ingreses.</p>
   <p>A continuación, escribe o copia y pega el texto a analizar.</p>
 
-  <textarea name="user-input"></textarea>
-  <ul>
-    <li data-testid="word-count">Palabras:</li>
-    <li data-testid="character-count">Caracteres:</li>
-    <li data-testid="character-no-spaces-count">Caracteres sin espacios y signos de puntuación:</li>
-    <li data-testid="number-count">Números:</li>
-    <li data-testid="number-sum">Suma de números:</li>
-    <li data-testid="word-length-average">Longitud promedio de palabras:</li>
+  <textarea name="user-input" placeholder="Escribe aquí"></textarea>
+  
+  <ul class="metrics">
+    <li class="metric" data-testid="word-count">Palabras:</li>
+    <li class="metric" data-testid="character-count">Caracteres:</li>
+    <li class="metric" data-testid="character-no-spaces-count">Caracteres sin espacios ni signos de puntuación:</li>
+    <li class="metric" data-testid="number-count">Números:</li>
+    <li class="metric" data-testid="number-sum">Suma de números:</li>
+    <li class="metric" data-testid="word-length-average">Longitud promedio de palabras:</li>
   </ul>
-  <button id="reset-button">Reiniciar</button>
+  
+  <button id="reset-button" type="reset">Reiniciar</button>
 <br>
 <br>
-  <footer>
-    <p>Desarrollado por Vanessa Valdés 𓅇</p>
+  <footer>  
+    <p>Dev. Vanessa Valdés 𓅇</p>
   </footer>
   <script src="index.js" type="module"></script>
 </body>
