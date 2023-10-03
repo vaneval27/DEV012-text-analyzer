@@ -1,0 +1,103 @@
+* {
+    padding: 5px;
+    margin: 5px;
+    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    overflow-y: hidden;
+    align-items: center;
+    background-color: #052026;
+    color: #eee;
+}
+
+
+header{
+    display: flex;
+    margin-top: 0px;
+    height: 60px;
+    width: 100%;
+    background-color: #0a6c6f;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+h1{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 25px;
+    position: flex;
+    left: 80px;
+    top: 30px;
+    font-weight: 300;    
+}
+  
+textarea[name="user-input"] {
+    width: 25rem;
+    height: 7.5rem;
+    background-color: #e9fcfd;
+    border-radius: 1rem;
+    padding: 0.5em;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+#reset-button {
+    background-color:#e3eded;
+    border: none;
+    border-radius: 0.5rem;
+    color: #0a504b;
+    padding: 12px 24px;
+    text-align: center;
+    display: inline-block;
+    letter-spacing: 0.05em;
+    font-size: 15px;
+    font-weight: 700;   
+}
+
+#reset-button:hover{
+    background-color: #0b538f;
+    color: #eee;
+}
+
+ul {
+    column-count: 2;
+    list-style: none;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.metric {
+    background-color: #1d8989;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: left;
+    padding: 10px;
+}
+
+footer{
+    display: flex;
+    height: 20px;
+    width: 100%;
+    font-size: 15px;
+    background-color:#084e50;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+p{
+    color: rgb(164, 220, 234);
+}
