@@ -36,17 +36,17 @@ resultados en tiempo real a medida que el usuario escribe su texto:
     caracteres que hay en el texto ingresado, incluidos espacios y signos de
     puntuación.
 
-    - **Recuento de caracteres excluyendo espacios y signos de puntuación**: Cuenta el         número de caracteres que hay en el texto ingresado, excluyendo espacios y signos de
+    - **Recuento de caracteres excluyendo espacios y signos de puntuación**: Cuenta el número de caracteres que hay en el texto ngresado,     excluyendo espacios y signos de
     puntuación.
 
     - **Recuento de números**: Cuenta la cantidad de números que hay en
     el texto ingresado.
 
-    - **Suma total de números**: Muestra la suma total de todos los números ingresados en      el texto.
+    - **Suma total de números**: Muestra la suma total de todos los números ingresados en el texto.
       
-    - **Longitud media de las palabras**: Calcula y muestra la longitud media de las           palabras en el texto de entrada.
+    - **Longitud media de las palabras**: Calcula y muestra la longitud media de las palabras en el texto de entrada.
 
-3. La aplicación debe permite limpiar el contenido del área de texto y reiniciar los adtos de las métricas por medio del borón "Reiniciar".
+3. La aplicación permite limpiar el contenido del área de texto y reiniciar los datos de las métricas por medio del botón "Reiniciar".
 
 
 ## 4. Diseño y prototipo
